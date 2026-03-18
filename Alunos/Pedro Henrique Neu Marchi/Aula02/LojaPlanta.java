@@ -16,10 +16,10 @@ public class LojaPlanta {
 
 			switch (opcao) {
 			case 1:
-				
+				Metodos.calcularPreco();
 				break;
 			case 2:
-				
+				Metodos.calcularTroco();
 				break;
 			case 3:
 				System.out.println("Saindo...");
