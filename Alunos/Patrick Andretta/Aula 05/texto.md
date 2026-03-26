@@ -1,4 +1,5 @@
 # Paradigmas imperativos e declarativos
+
 Patrick Andretta  
 T02N  
 25/03/2026
@@ -82,6 +83,14 @@ Resumo do fluxo do programa.
 Resumo do fluxo do programa.  
 
 É declarativo, lê a idade, verifica a condição, decide o resultado, o exibe na tela, finaliza o programa.  
- 
+
 ˜->˜ Indica o que fazer em caso da afirmação ser verdadeira.     
 ˜;˜ indica o que fazer caso a condição for falsa. halt encerra a execução
+
+## Conclusão
+
+Os paradigmas imperativo e declarativo representam formas diferentes de programar. O imperativo descreve como resolver o problema passo a passo, enquanto o declarativo define o que deve ser feito.
+
+A comparação entre Java e Prolog mostra isso claramente: Java segue um fluxo controlado pelo programador, enquanto Prolog utiliza regras e lógica para chegar ao resultado.
+
+Assim, cada paradigma tem sua utilidade, e entender ambos ajuda a escolher a melhor abordagem para cada problema.
