@@ -1,6 +1,8 @@
 # Imperativo
 
-    O paradigma imoperativo é um dos modelos mais tradicionais de programação, baseado na ideia de descrever passo a passo as instruções que o computador deve executar para resolver um problema. Nesse
+    O paradigma imoperativo é um dos modelos mais tradicionais de programação,
+    baseado na ideia de descrever passo a passo as instruções que o computador 
+    deve executar para resolver um problema. Nesse paradigma
 
 ## Programação Estrutural
 
