@@ -18,7 +18,7 @@ Prolog é uma linguagem representativa desse paradigma. Em vez de instruções p
 
 Considere o objetivo de verificar se um número pertence a uma lista.
 
-    Exemplo em java
+
 
    java
 public class Exemplo {
@@ -34,8 +34,6 @@ public class Exemplo {
 
 
 Neste código, o processo é explicitamente definido: percorre-se a lista elemento por elemento até encontrar o valor desejado ou chegar ao final.
-
-Exemplo em Prolog 
 
    prolog
 pertence(X, [X|_]).
