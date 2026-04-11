@@ -9,24 +9,27 @@ public class Date {
     
     static DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/uuuu").withResolverStyle(ResolverStyle.STRICT);
 
-    public static LocalDate DataValida(String dataString){
+    public static LocalDate stringToDate(String dataString){
         try {
-            return LocalDate.parse(dataString+"/2026", dateFormatter);
+            return LocalDate.parse(dataString, dateFormatter);
         } catch (Exception e) {
+            System.out.println("Digite uma data válida: (dd/mm/aaaa");
+            String novaData = Main.scan.nextLine().trim();
+            stringToDate(novaData);
             return null;
         }
     }
 
     public static void EscolherDia(double venda_total){
-        /*if (venda_total == 0){
+        if (venda_total == 0){
             System.out.println("Você ainda não fez nenhuma venda hoje");
             Main.VoltarMenu();
-        }*/
+        }else {
         System.out.println("Suas vendas totais: "+venda_total);
         while (true) {
-            System.out.println("Escolha o dia para alocar as vendas totais: (dd/mm)");
+            System.out.println("Escolha o dia para alocar as vendas totais: (dd/mm/aaaa)");
             String data = Main.scan.nextLine().trim();
-            LocalDate dataValida = DataValida(data);
+            LocalDate dataValida = stringToDate(data);
             if (dataValida != null){
             System.out.printf("Alocado %.2f para o dia %s\n", venda_total, data);
             valoresDiaEMes.merge(dataValida, venda_total, Double::sum);
@@ -35,6 +38,7 @@ public class Date {
             break;
             }else{
             System.out.println("Tente novamente com uma data válida\n");
+            }
         }
        
         
@@ -43,17 +47,16 @@ public class Date {
     }
 
     public static void BuscarVendaDia(){
-        DateTimeFormatter formatar = DateTimeFormatter.ofPattern("dd/MM");
-        System.out.println("Digite a data para ver seu total de vendas (dd/mm)");
+        System.out.println("Digite a data para ver seu total de vendas (dd/mm/aaaa)");
 
         String data = Main.scan.nextLine().trim();
-        LocalDate dataValida = DataValida(data);
+        LocalDate dataValida = stringToDate(data);
 
         if (dataValida != null){
             Double valor = valoresDiaEMes.get(dataValida);
 
             if (valor != null){
-                System.out.println("Data "+ dataValida.format(formatar) + " | Valor: " + valor + "\n");
+                System.out.println("Data "+ dataValida.format(dateFormatter) + " | Valor: " + valor + "\n");
             }else {
                 System.out.println("Não tem vendas nessa data");
             }
@@ -62,6 +65,14 @@ public class Date {
         }
         
         
+        
         Main.VoltarMenu();
+        }
+
+        public static LocalDate dataAtualToFormat() {
+            LocalDate dataAtual = LocalDate.now();
+            String dataAtualString = dataAtual.format(dateFormatter);
+            LocalDate dataAtualFormatada = Date.stringToDate(dataAtualString);
+            return dataAtualFormatada;
         }
     }
