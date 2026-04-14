@@ -111,12 +111,12 @@ public class Endereco {
     }
 
     public void apresentarLogradouro() {
-        System.out.println("Estado: "+ estado + " | Cidade: " + cidade + " | Bairro: " + bairro + " | Rua: " + rua + " | Complemento: " + complemento);
+        System.out.println("Estado: "+ estado + " | Cidade: " + cidade + " | Bairro: " + bairro + " | Rua: " + rua + " | Complemento: " + complemento + " | \n");
     }
 
     @Override //Só as informações básicas
     public String toString() {
-        return String.format("Cidade: %s | Bairro: %s | Rua: %s\n", cidade, bairro, rua);
+        return String.format("Cidade: %s | Bairro: %s | Rua: %s |\n", cidade, bairro, rua);
     }
 
 

@@ -10,8 +10,14 @@ public class Main {
     
     public static void main(String[] args){
         Lojas loja1 = new Lojas("Lojinha", "LOJINHARAZAOSOCIAL", "12345676543211", "Cafelandia", "Bairro nobre", "Rua rapida");
+        loja1.apresentarse();
+        System.out.println(loja1.getEndereco());
+        loja1.getEndereco().apresentarLogradouro();
 
         Lojas loja2 = new Lojas("Lojão", "LOJÃORAZAOSOCIAL", "19283740594837", "Cascavel", "Bairro pobre", "Rua devagar");
+        loja2.apresentarse();
+        System.out.println(loja2.getEndereco());
+        loja2.getEndereco().apresentarLogradouro();
 
         Vendedor vend1 = new Vendedor("Leo", 18, loja2, 1200.0, "Cascavel", "Bairro pobre 2", "rua devagar 2");
         vend1.receberSalario(1200);
@@ -44,7 +50,20 @@ public class Main {
 
         Gerente gerente1 = new Gerente("Gerentinho", 50, loja2, 3500.0, "Cidade grande", "bairro grande", "rua grande");
 
+        gerente1.receberSalario(4000);
+        gerente1.receberSalario(4250);
+        gerente1.receberSalario(4500);
+        gerente1.apresentarse();
+        System.out.println(gerente1.calcularMediaSalarial());
+        System.out.println(gerente1.calcularBonusSalarial());
+
         Gerente gerente2 = new Gerente("Gerentão", 70, loja1, 5000.0, "cidade pequena", "bairro pequeno", "rua pequena");
+        gerente2.receberSalario(5000);
+        gerente2.receberSalario(5250);
+        gerente2.receberSalario(5500);
+        gerente2.apresentarse();
+        System.out.println(gerente2.calcularMediaSalarial());
+        System.out.println(gerente2.calcularBonusSalarial());
 
         menu();
 

@@ -4,7 +4,7 @@ public class Lojas {
     private String nomeFantasia;
     private String razaoSocial;
     private String cnpj;
-    private Endereco endereco;
+    public Endereco endereco;
     public ArrayList<Vendedor> vendedores = new ArrayList<>();
     public ArrayList<Clientes> clientes = new ArrayList<>();
 
@@ -64,6 +64,10 @@ public class Lojas {
             setCnpj(novaCnpj);
         }
     }
+
+    public Endereco getEndereco(){
+        return endereco;
+    }
     
 
     public void contarClientes() {
@@ -80,8 +84,4 @@ public class Lojas {
         System.out.println("Loja: "+ this.nomeFantasia + " | CNPJ: " + this.cnpj + " | "+ this.endereco);
     }
 
-    public static void main(String[] args) {
-        Lojas loja1 = new Lojas("Lojinha", "LOJINHARAZAOSOCIAL", "12345676543211", "Cafelandia", "Bairro nobre", "Rua rapida");
-        loja1.apresentarse();
-    }
 }

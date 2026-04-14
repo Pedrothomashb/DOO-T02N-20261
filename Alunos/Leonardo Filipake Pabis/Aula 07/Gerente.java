@@ -19,21 +19,5 @@ public class Gerente extends Funcionario {
         return 0.35;
     }
 
-    public static void main(String[] args) {
-        Lojas loja = new Lojas();
-        loja.setNomeFantasia("ABC");
-        Gerente g = new Gerente("ge", 25, loja, 1000, "cascavel", "country,", "acre");
-        g.apresentarse();
-        System.out.println(g.getLoja());
-        g.endereco.apresentarLogradouro();
-        System.out.println(g.endereco);
-        g.receberSalario(1000);
-        g.receberSalario(1500);
-        g.receberSalario(1250);
-        System.out.println(g.getBonus());
-        System.out.println(g.calcularMediaSalarial());
-        System.out.println(g.calcularBonusSalarial());
-        
-    }
 }
 
