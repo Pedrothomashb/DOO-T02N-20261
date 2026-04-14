@@ -121,7 +121,7 @@ public class Pedido{
 
     public void getItens() {
         for (int i = 0; i < itens.size(); i++) {
-            System.out.println("Item: "+(i+1)+" | " + itens.get(i).gerarDescicao() + "\n");
+            System.out.print("Item: "+(i+1)+" | " + itens.get(i).gerarDescicao());
         }
     }
 
