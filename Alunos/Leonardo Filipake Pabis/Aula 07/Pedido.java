@@ -40,8 +40,8 @@ public class Pedido {
         return dataCriacao;
     }
 
-    public void setDataCriacao(LocalDate dataCriacaoDate) {
-        this.dataCriacao = dataCriacaoDate;
+    public void setDataCriacao() {
+        this.dataCriacao = Date.dataAtualToFormat();
     }
 
     public LocalDate getDataPagamento() {
@@ -86,8 +86,10 @@ public class Pedido {
         this.loja = loja;
     }
 
-    public ArrayList<Item> getItens() {
-        return itens;
+    public void getItens() {
+        for (int i = 0; i < itens.size(); i++) {
+            System.out.println("Item: "+(i+1)+" | " + itens.get(i).gerarDescicao() + "\n");
+        }
     }
 
     public void adicionarItem(Item item) {
@@ -103,7 +105,7 @@ public class Pedido {
     }
 
     public void gerarDescricaoVenda() {
-        System.out.println("Criação: " + dataCriacao + " | Total: " + calcularValorTotal());
+        System.out.println("Id do pedido: " + id + "| Criação: " + dataCriacao + " | Total: " + calcularValorTotal());
     }
 
     

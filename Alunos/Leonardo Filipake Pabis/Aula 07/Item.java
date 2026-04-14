@@ -75,8 +75,8 @@ public class Item {
         }
     }
 
-    public void gerarDescicao() {
-        System.out.println("ID: " + id + " | Item:" + nome + " | Tipo: " + tipo + " | Valor: " + valor);
+    public String gerarDescicao() {
+        return String.format("ID: %i | Item: %s | Tipo: %s | Valor: %d \n", id, nome, tipo, valor);
     }
 
 }
