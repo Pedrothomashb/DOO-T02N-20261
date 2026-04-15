@@ -88,6 +88,8 @@ public class Main {
     }
     
     public static void menu(){
+        //apagar a vendas.java - criar (1 - Criar pedido) - imprimir a lista de itens e escolher o numero dele e perguntar a quantidade, ir adicionando no pedido, após isso, ir para o pagamento, onde vai pagar agora ou agendar - 2, da pra continuar - 3, refatorar para adicionar o pedido na lista - 4 e 5, acho que tirar, pois os proprios pedidos tem data de criacao, refatorar o 5 para poder buscar no dia - refatorar o 6, para mostar tudo certinho
+        // apos processar o pagamento, colocar a chave do dia e o valor no hashmap do Date, e a busca acho que serve já
         System.out.println("********");
         System.out.println("* MENU *");
         System.out.println("********");
