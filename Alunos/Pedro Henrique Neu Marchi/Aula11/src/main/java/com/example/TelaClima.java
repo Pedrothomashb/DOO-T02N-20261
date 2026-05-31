@@ -1,3 +1,4 @@
+package com.example;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -9,7 +10,7 @@ public class TelaClima extends JFrame {
 
     public TelaClima() {
 
-        setTitle("My Weather");
+        setTitle("Consulta Climática");
         setSize(700, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -29,19 +30,8 @@ public class TelaClima extends JFrame {
         painelTopo.setBorder(
             BorderFactory.createEmptyBorder(20, 0, 20, 0));
 
-        ImageIcon imagemOriginal = new ImageIcon(
-            getClass().getResource("/Nuvem.png"));
-
-        Image imagemRedimensionada =
-            imagemOriginal.getImage().getScaledInstance(
-                120,
-                120,
-                Image.SCALE_SMOOTH
-            );
-
-        JLabel iconeClima =
-            new JLabel(new ImageIcon(imagemRedimensionada));
-
+        JLabel iconeClima = new JLabel("🌤");
+        iconeClima.setFont(new Font("Segoe UI Symbol", Font.PLAIN, 90));
         iconeClima.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JLabel titulo = new JLabel("Consulta Climática");
