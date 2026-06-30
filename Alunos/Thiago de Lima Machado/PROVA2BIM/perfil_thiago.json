@@ -1,0 +1,66 @@
+{
+  "nome" : "thiago",
+  "favoritos" : [ {
+    "id" : 526,
+    "name" : "The Office",
+    "language" : "English",
+    "genres" : [ "Comedy" ],
+    "status" : "Ended",
+    "premiered" : "2005-03-24",
+    "ended" : "2013-05-16",
+    "ratingAverage" : 8.5,
+    "networkName" : "NBC",
+    "genresFormatted" : "Comedy",
+    "ratingFormatted" : "8,5"
+  }, {
+    "id" : 490,
+    "name" : "Star Trek",
+    "language" : "English",
+    "genres" : [ "Action", "Adventure", "Science-Fiction" ],
+    "status" : "Ended",
+    "premiered" : "1966-09-08",
+    "ended" : "1969-06-03",
+    "ratingAverage" : 8.4,
+    "networkName" : "NBC",
+    "genresFormatted" : "Action, Adventure, Science-Fiction",
+    "ratingFormatted" : "8,4"
+  }, {
+    "id" : 75632,
+    "name" : "The Pitt",
+    "language" : "English",
+    "genres" : [ "Drama", "Medical" ],
+    "status" : "Running",
+    "premiered" : "2025-01-09",
+    "ended" : null,
+    "ratingAverage" : 8.5,
+    "networkName" : "HBO Max",
+    "genresFormatted" : "Drama, Medical",
+    "ratingFormatted" : "8,5"
+  }, {
+    "id" : 77003,
+    "name" : "Spider-Noir",
+    "language" : "English",
+    "genres" : [ "Drama", "Action", "Science-Fiction" ],
+    "status" : "To Be Determined",
+    "premiered" : "2026-05-25",
+    "ended" : null,
+    "ratingAverage" : 7.2,
+    "networkName" : "MGM+",
+    "genresFormatted" : "Drama, Action, Science-Fiction",
+    "ratingFormatted" : "7,2"
+  }, {
+    "id" : 92431,
+    "name" : "Doctor Who",
+    "language" : "English",
+    "genres" : [ "Adventure", "Children", "Science-Fiction" ],
+    "status" : "In Development",
+    "premiered" : null,
+    "ended" : null,
+    "ratingAverage" : null,
+    "networkName" : "CBeebies",
+    "genresFormatted" : "Adventure, Children, Science-Fiction",
+    "ratingFormatted" : "N/A"
+  } ],
+  "jaAssistidas" : [ ],
+  "desejaAssistir" : [ ]
+}
