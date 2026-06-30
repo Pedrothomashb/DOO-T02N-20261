@@ -1,0 +1,28 @@
+[ {
+  "nome" : "t",
+  "senha" : "t",
+  "sessaoAtiva" : true,
+  "favoritos" : [ {
+    "id" : 32938,
+    "nome" : "The Rookie",
+    "idioma" : "English",
+    "notaGeral" : 8.0,
+    "estado" : "Ainda transmitindo",
+    "dataEstreia" : "2018-10-16",
+    "dataTermino" : null,
+    "emissora" : "ABC",
+    "genero" : [ "Drama", "Comedy", "Crime" ]
+  } ],
+  "assistidas" : [ {
+    "id" : 32938,
+    "nome" : "The Rookie",
+    "idioma" : "English",
+    "notaGeral" : 8.0,
+    "estado" : "Ainda transmitindo",
+    "dataEstreia" : "2018-10-16",
+    "dataTermino" : null,
+    "emissora" : "ABC",
+    "genero" : [ "Drama", "Comedy", "Crime" ]
+  } ],
+  "queroAssistir" : [ ]
+} ]
